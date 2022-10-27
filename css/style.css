@@ -8,6 +8,7 @@
 }
 
 :root {
+    /* https://mycolor.space/?hex=%2371DCE4&sub=1 */
     --branco: #ffffff;
     --color1: #71DCE4;
     --color2: #83EDF5;
@@ -16,8 +17,11 @@
     --color5: #00333B;
     --color6: #9D5B9B;
     --color7: #A03962;
-    --color8: linear-gradient(90deg, #005962 35%, #00838B 100%);    
-    --background-color: linear-gradient(90deg, #71dce4 35%, #3DAEB6 100%);    
+    --color8: linear-gradient(90deg, #005962 35%, #00838B 100%);
+
+    --background-color: linear-gradient(90deg, #71dce4 35%, #3DAEB6 100%);
+    --desenvolvimento-background-1: rgb(216, 243, 251);
+    --desenvolvimento-background-2: linear-gradient(90deg, rgba(216, 243, 251, 1) 0%, rgba(131, 237, 245, 1) 99%);
 }
 
 a {
@@ -36,14 +40,14 @@ a:hover {
     border-radius: 100%;
 }
 
-.logo{
+.logo {
     display: flex;
     direction: row;
     align-items: center;
     justify-items: center;
 }
 
-.logo-texto{
+.logo-texto {
     color: var(--branco);
     letter-spacing: 4px;
     margin-left: 4px;
@@ -68,7 +72,7 @@ nav {
 
 .nav-list li {
     margin-left: 32px;
-}   
+}
 
 .mobile-menu {
     display: none;
@@ -152,7 +156,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .apresentacao-textual {
@@ -162,7 +166,7 @@ body {
     gap: 2vh;
     align-items: center;
     padding: 5%;
-    
+
 }
 
 .apresentacao-textual-titulo {
@@ -192,7 +196,8 @@ body {
     background-color: #fff;
     border: none;
     border-radius: 45px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    transition: all 0.3s ease 0s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
     padding-right: 10%;
@@ -211,16 +216,17 @@ apresentacao-textual-botao:active {
     transform: translateY(-1px);
 }
 
-.apresentacao-visual{
+.apresentacao-visual {
     padding: 10%;
     margin-right: 5%;
 }
 
-.imagem-principal{
+.imagem-principal {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     height: 35vh;
     border-radius: 100%;
-    }   
+}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -229,7 +235,7 @@ p {
     margin-inline-end: 0px;
 }
 
-.icones{
+.icones {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -237,68 +243,70 @@ p {
 
 ion-icon {
     font-size: 30px;
-  }
-
-
-.sobre{
-display: flex;
-flex-direction: column;
-font-family: 'Ubuntu', sans-serif;
-color: var(--branco);
-font-weight: 300;
-font-size: 24px;
-margin-top: 5%;
-margin-bottom: 5%;
 }
 
-.lideranca{
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lideranca {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.lideranca-esquerda{
+.lideranca-esquerda {
     display: flex;
     flex-direction: column;
     width: 40%;
-    text-align: center;   
+    text-align: center;
 }
-.lideranca-direita{
+
+.lideranca-direita {
     margin-left: 5%;
     align-content: center;
 }
 
-.lideranca-blocos{
+.lideranca-blocos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
 
-.bloco-img{
+.bloco-img {
     height: 50px;
     margin-top: 40px;
 }
 
-.sobre-img{
+.sobre-img {
     height: 400px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 16px;
 }
 
 
-.margem{
+.margem {
     margin-top: 50px;
 }
 
 
-.bloco-texto{
+.bloco-texto {
     font-size: 16px;
     font-weight: 400;
     margin: 10px;
     color: #005962;
 }
-.bloco{
+
+.bloco {
     background: var(--branco);
     width: 22vh;
     height: 22vh;
@@ -308,19 +316,19 @@ margin-bottom: 5%;
 
 }
 
-.sobre-titulo{
+.sobre-titulo {
     font-size: 48px;
     letter-spacing: 4px;
     text-transform: uppercase;
 
 }
 
-.divisor{
+.divisor {
     margin-top: 10vh;
-    
+
 }
 
-.sobre-texto{
+.sobre-texto {
     text-align: center;
 }
 
@@ -359,4 +367,51 @@ margin-bottom: 5%;
 
 .custom-shape-divider-top-1666880047 .shape-fill {
     fill: #FFFFFF;
+}
+
+.desenvolvimento {
+    background: var(--desenvolvimento-background-1);
+    background: var(--desenvolvimento-background-2);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.desenvolvimento-blocos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.desenvolvimento-bloco {
+    padding: 5%;
+}
+
+.desenvolvimento-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.desenvolvimento-texto {
+    color: var(--color4);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.proxima-pagina{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+
+}
+.seta{
+    height: 75px;
 }
